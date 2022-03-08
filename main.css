@@ -6,12 +6,31 @@ h4 {
     padding: 0;
     margin: 0%;
 }
-h2 { 
+
+
+.brandColor { 
     text-align: center;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0%;
+    color: #FFFFFF;
+}
+
+.subBrandColor { 
+    text-align: center;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
     padding: 0;
     margin: 0%;
     color: rgb(247, 37, 37);
 }
+
+
 div {
     margin-top: 10px;
   }
@@ -60,17 +79,21 @@ li a {
     margin-left: auto;
     top: 40%;
     left: 35%;
+    width: 650px;
     transform: translate(-50%, -50%);
   }
 
 div.gallery {
     flex: 0 0 218px;
-    height: 300px;
+    height: 280px;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     object-fit: cover;
     padding: 15px;
+    margin-left: 100px;
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
 
 div.gallery-container {
@@ -121,6 +144,7 @@ div.gallery1{
     position: relative;
     object-fit: cover;
     padding: 15px;
+    margin-left: 20px;
   }
 
 .gallery1-container{
