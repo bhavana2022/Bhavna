@@ -12,7 +12,7 @@ h2 {
 }
 
 
-div.ex1 { 
+div.ex1 {
     background-image: url("./img/bg.jpg");
     padding: 15px;
   }
@@ -43,8 +43,9 @@ li a {
 
 .container {
     position: relative;
+    margin: 0 -10px;
+    list-style: none;
     text-align: center;
-    color: white;
   }
 
 .centered {
@@ -61,25 +62,78 @@ div.gallery {
     width: 300px; */
 
     flex: 0 0 218px;
-    float: left;
+    /* float: left; */
     height: 300px;
-    width: 400px;
+    /* width: 400px; */
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     object-fit: cover;
     padding: 15px;
   }
+
+div.gallery-container {
+    position: relative;
+    margin: 0 -10px;
+    list-style: none;
+  }
   
-div.gallery:hover {
+div .gallery-container .additional-list-info {
+    position: absolute;
+    bottom: 0;
+    height: 56px;
+    background-image: linear-gradient(to top, #000, rgba(84,84,84,0));
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 17px;
+}
+
+.additional-list-info li:not(:first-child) {
+    margin-left: 10px;
+}
+.additional-list-info li:not(:first-child) {
+    margin-left: 10px;
+}
+.additional-list-info li {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.additional-list-info li {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+div.gallery.img.gallery-container :hover {
     border: 1px solid #777;
   }
   
-div.gallery img {
+/* div.gallery img {
     width: auto;
     height: auto;
+} */
+
+div.gallery1{
+    /* margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px; */
+
+    flex: 0 0 218px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    padding: 15px;
   }
 
+.gallery1-container{
+    position: relative;
+    margin: 0 -10px;
+    list-style: none;
+    text-align: center;
+  }
 /*=====================================
   Footer STYLES 
   ===================================*/
