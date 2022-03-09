@@ -83,59 +83,73 @@ li a {
     transform: translate(-50%, -50%);
   }
 
-div.gallery {
+.gallery {
     flex: 0 0 218px;
-    height: 280px;
+    height: 570px;
     border-radius: 15px;
     overflow: hidden;
     position: relative;
     object-fit: cover;
-    padding: 15px;
-    margin-left: 100px;
+    padding-right: 30px;
+    margin-left: 150px;
     margin-top: 0%;
     margin-bottom: 0%;
   }
 
-div.gallery-container {
+.gallery .gallery-container .card{
     position: relative;
+    display:inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.gallery .gallery-container {
+    position: absolute;
     margin: 0 -10px;
     list-style: none;
   }
+
   
-div .gallery-container .additional-list-info {
-    position: absolute;
-    bottom: 0;
-    height: 56px;
-    background-image: linear-gradient(to top, #000, rgba(84,84,84,0));
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 17px;
+  .gallery .gallery-container .overlay {
+    position:absolute;
+    top:160PX;
+    left:0%;
+    right: 0%;
 }
 
-.additional-list-info li:not(:first-child) {
-    margin-left: 10px;
-}
-.additional-list-info li:not(:first-child) {
-    margin-left: 10px;
-}
-.additional-list-info li {
-    display: flex;
-    margin-bottom: 7px;
+.gallery .gallery-container .overlay .left{
+    display: inline-block;
+    margin-left: 15px;
+    color:white;
+    font-weight: bold;
+
 }
 
-.additional-list-info li {
-    display: flex;
-    margin-bottom: 7px;
+.gallery .gallery-container .overlay .right{
+    display: inline-block;
+    margin-left: 115Px;
+    color:white;
+    font-weight: bold;
+
+}
+.location,.day{
+    text-align: left;
+}
+.price,.nop{
+    text-align: right;
 }
 
-div.gallery.img.gallery-container :hover {
+.overlay li {
+    display: flex;
+    color: ivory;
+}
+
+div .gallery .img .gallery-container :hover {
     border: 1px solid #777;
   }
   
-.imgMargin {
+/* .imgMargin {
     margin-right: 25px;
-}
+} */
 
 div.gallery1{
     flex: 0 0 218px;
@@ -152,7 +166,70 @@ div.gallery1{
     margin: 0 -10px;
     list-style: none;
     text-align: center;
+    color: whitesmoke;
   }
+
+.gallery1 .gallery1-container .card{
+    position: relative;
+    display:inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.gallery1 .gallery1-container {
+    /* position: absolute;
+    margin: 0 -10px;
+    list-style: none; */
+    position: relative;
+    margin: 0 -10px;
+    list-style: none;
+    text-align: center;
+  }
+
+  
+.gallery1 .gallery1-container .overlay {
+    position:absolute;
+    top:0%;
+    left:0%;
+    right: 0%;
+    background-image: linear-gradient( to top, rgb(0 0 0 / 37%)10%, rgb(0 0 0 / 22%) 60%, rgb(0 0 0 / 17%) 10% );
+}
+
+.gallery1 .gallery1-container .overlay .left{
+    display: inline-block;
+    margin-left: 15px;
+    color:white;
+    font-weight: bold;
+
+}
+
+.gallery1 .gallery1-container .overlay .right{
+    display: inline-block;
+    margin-left: 115Px;
+    color:white;
+    font-weight: bold;
+
+}
+.location,.day{
+    text-align: left;
+}
+.price,.nop{
+    text-align: right;
+}
+
+.button {
+    background-color: rgb(243, 66, 12);
+    border: black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  .checked {
+    color: orange;
+  }
+  
 /*=====================================
   Footer STYLES 
   ===================================*/
