@@ -5,7 +5,7 @@
     background: #fff;
     transition: all 0.5s;
     z-index: 997;
-    padding: 20px 0;
+    padding:-1x;
   }
   #header.header-scrolled {
     padding: 12px 0;
@@ -60,6 +60,11 @@
 .bg-primary {
     color: #fff;
     background-color: rgb(71, 185, 219);
+
+}
+
+.brandColor { 
+  color: #a39494;
 }
 
 .bg_gray {
@@ -70,6 +75,10 @@
 .content-section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
+    -webkit-box-shadow: 10px 10px 20px rgb(136, 135, 131);
+    -moz-box-shadow:    20px 20px 20px rgb(136, 135, 131);
+    box-shadow:         inset 1px -4px 9px 0px rgb(136 135 131);
+    z-index:999;
 }
 
 .sectionmtb {
@@ -125,13 +134,40 @@
 
 .nav-tabs {
     border-bottom: 1px solid #ddd;
-    width: 400px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: 340px;
 }
 
+.navbar {
+  margin-bottom: 0px;
+  -webkit-box-shadow: 10px 10px 20px rgb(136, 135, 131);
+  -moz-box-shadow:    20px 20px 20px rgb(136, 135, 131);
+  box-shadow:         1px 7px 20px 0px rgb(136 135 131);
+  z-index:999;
+  height: 85px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #555;
+  background-color: #47b9db;
+  margin-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #777;
+  margin-top: 20px;
+}
 .tab-content{
     border-bottom: 1px solid #ddd;
     float: left;
-    width: 400px;
+    width: 600px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 hr {
