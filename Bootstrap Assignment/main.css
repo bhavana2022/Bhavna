@@ -27,8 +27,12 @@
     max-height: 40px;
   }
 
+  .carousel{
+    height:550px;
+  }
+
   .carousel .item {
-    height: 450px;
+    height: 550px;
   }
   
   .item img {
@@ -37,11 +41,13 @@
       left: 0;
       min-height: 450px;
   }
+
   .carousel-caption {
     position: relative;
     left: 180px;
     top: 200px;
 }
+
 .carousel-caption .bg_aqua{
     background-color: rgb(71, 185, 219);
     width: 350px;
@@ -60,8 +66,7 @@
 .bg-primary {
     color: #fff;
     background-color: rgb(71, 185, 219);
-
-}
+  }
 
 .brandColor { 
   color: #a39494;
@@ -73,8 +78,8 @@
 }
 
 .content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     -webkit-box-shadow: 10px 10px 20px rgb(136, 135, 131);
     -moz-box-shadow:    20px 20px 20px rgb(136, 135, 131);
     box-shadow:         inset 1px -4px 9px 0px rgb(136 135 131);
@@ -86,16 +91,34 @@
   padding-bottom: 2.5rem;
 }
 
+.sectionmt {
+  padding-top: 2.5rem;
+}
+
+.sectionmb {
+  padding-bottom: 2.5rem;
+}
+
+.sectionml {
+  padding-left: 1.5rem;
+}
+
+.sectionmr {
+  padding-right: 1.5rem;
+}
+
 .sectionmlr {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  line-height: 2.2
 }
+
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0.5rem;
     display: flex;
     /* flex-wrap: wrap; */
-    margin-top: calc(+10 * var(--bs-gutter-y));
+    /* margin-top: calc(+5 * var(--bs-gutter-y)); */
     margin-right: calc(-0.5 * var(--bs-gutter-x));
     margin-left: calc(0 * var(--bs-gutter-x));
   }
@@ -113,18 +136,41 @@
     border-radius: 50% !important;
   }
 
-  .mx-auto {
+.mx-auto {
     margin-right: auto !important;
     margin-left: auto !important;
   }
 
-  .container{
+.container-fluid {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* .container{
       padding-right: 15px;
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
 
-  }
+  } */
+
+.container1 {
+      position: relative;
+      font-family: Arial;
+      background-color: rgb(118, 174, 189);
+    }
+    
+.text-block {
+      position: absolute;
+      /* bottom: 190px; */
+      right: 450px;
+      background-color: rgb(118, 206, 228);
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      top: 150px;
+      left: 500px;
+    }
 
 @media (min-width: 768px){
     .container{
@@ -137,7 +183,7 @@
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    width: 340px;
+    width: 100%;
 }
 
 .navbar {
@@ -149,20 +195,33 @@
   height: 85px;
 }
 
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: 5%;
+  margin-left: 8%;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 5%;
+  border-color: #ddd;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: #555;
   background-color: #47b9db;
   margin-top: 20px;
+  font-weight: bolder;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #777;
   margin-top: 20px;
 }
+
+
 .tab-content{
     border-bottom: 1px solid #ddd;
     float: left;
-    width: 600px;
+    width: 100%;
     padding-left: 10px;
     padding-top: 10px;
     border-top: 1px solid #ddd;
@@ -171,8 +230,6 @@
 }
 
 hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   width: auto;
   border: 0;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
@@ -210,9 +267,37 @@ img, svg {
 }
 
 .card {
-  background-color: rgb(180, 220, 233);
+  background-color: rgb(233, 240, 241) ;
+}
+.form {
+  margin-top: 0px;
 }
 
+.form .form-control {
+  background-color: rgb(233, 240, 241);
+}
+
+.form .card {
+  background-color: #f5f5f5 !important;
+}
+
+ /* .card .card1 {
+  background-color: rgb(255, 255, 255) !important;
+} */
+
+.card-text {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.card-title {
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #3ed6db;
+  font-weight: bold;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -222,6 +307,11 @@ a {
 a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.btn {
+  margin-bottom: 20px;
+  margin-right: 250px;
 }
 
 .previous {
