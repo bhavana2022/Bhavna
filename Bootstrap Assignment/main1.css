@@ -1,17 +1,5 @@
-*,
-*::after,
-*::before{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
 /*--------------------------------------------------------------
-                         Header
+# Header
 --------------------------------------------------------------*/
 #header {
     background: #fff;
@@ -59,47 +47,35 @@ html{
       min-height: 450px;
   }
 
-  /* @media only screen and (max-width: 320px) {
-    .carousel-caption  {
-      margin-left: 50px;
-      margin-bottom: 30px;
-    }
-  }*/
-
-  @media only screen and (min-width: 768px) {
-    .carousel-caption {
-      margin-left: 500px;
-      margin-bottom: 130px;
-      padd
-    }
-  } 
-  
-}  
   .carousel-caption {
     position: relative;
     left: 180px;
     top: 200px;
 }
 
+@media (min-width: 500px){
+  .carousel-caption{
+      width: 750;
+  }
+  .bg_black{
+   /* right: 100px; */
+    top: 200px;
+  }
+}
 .carousel-caption .bg_aqua{
     background-color: rgb(71, 185, 219);
     width: 350px;
     --bs-gutter-x: 1.5rem;
     margin-left: calc(+35 * var(--bs-gutter-x));
     text-align: left;
-  }
-
  
-
+}
 .carousel-caption .bg_black{
     background-color: rgb(61, 62, 65);
     width: 200px;
     --bs-gutter-x: 1.5rem;
     margin-left: calc(+35 * var(--bs-gutter-x));
 }
-
-
-
 
 .bg-primary {
     color: #fff;
@@ -113,9 +89,7 @@ html{
 .bg_gray {
   background-color: rgb(233, 240, 241);
   margin-top: 20px;
-  height: auto;
 }
-/* work */
 
 .content-section {
     padding-top: 0.5rem;
@@ -137,7 +111,7 @@ html{
 
 .sectionmb {
   padding-bottom: 2.5rem;
-  }
+}
 
 .sectionml {
   padding-left: 1.5rem;
@@ -156,7 +130,7 @@ html{
 .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0.5rem;
-    /* display: flex; */
+    display: flex;
     /* flex-wrap: wrap; */
     /* margin-top: calc(+5 * var(--bs-gutter-y)); */
     margin-right: calc(-0.5 * var(--bs-gutter-x));
@@ -192,62 +166,35 @@ html{
     }
 }
 
-.container{
+  /* .container{
       padding-right: 15px;
       padding-left: 15px;
       margin-right: auto;
       margin-left: auto;
-      width: 100%;
-} 
+
+  } */
 
 .container1 {
       position: relative;
       font-family: Arial;
       background-color: rgb(118, 174, 189);
-     
-}
-
+      
+    }
+    
 .text-block {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  /* bottom: 190px; */
-  right: 30%;
-  background-color: rgb(118, 206, 228);
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  top: 35%;
-  left: 30%;
-  bottom: 40%;
- 
-}
+      position: absolute;
+      /* bottom: 190px; */
+      right: 450px;
+      background-color: rgb(118, 206, 228);
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      top: 150px;
+      left: 500px;
+    }
 
 .text-block h3{
-  text-align: justify;
-}
-
-@media only screen and (max-width: 1212px){
-  .container1{
-    width: auto;      
-  } 
-
- .text-block {
-    background-color: rgb(118, 206, 228);
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
-    top: 10%;
-    bottom: 10%;
-    left: 20%;
-    right: 20%;
-    font-size: xx-large;
-    }
-   /* .p {
-    text-align: center;
-    justify-content: center;
-    font-size: auto;
-  }  */
+   font-size: 20px;
 }
 
 @media (min-width: 768px){
@@ -261,18 +208,7 @@ html{
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    width: 50%;
-}
-
-.tab-content{
-  border-bottom: 1px solid #ddd;
-  float: left;
-  width: 80%;
-  padding-left: 10px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+    width: 100%;
 }
 
 .navbar {
@@ -304,6 +240,18 @@ html{
 .navbar-default .navbar-nav>li>a {
   color: #777;
   margin-top: 20px;
+}
+
+
+.tab-content{
+    border-bottom: 1px solid #ddd;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 hr {
@@ -367,8 +315,6 @@ img, svg {
   padding-top: 10px;
   padding-bottom: 5px;
   padding-right: 5px;
-  text-align: center;
-  justify-content: center;
 }
 
 .card-title {
@@ -376,7 +322,6 @@ img, svg {
   padding-top: 10px;
   color: #3ed6db;
   font-weight: bold;
-  text-align: center;
 }
 a {
   text-decoration: none;
@@ -408,12 +353,12 @@ a:hover {
   border-radius: 50%;
 }
 
-/* .container1 {
+.container1 {
   position: relative;
   font-family: Arial;
-} */
+}
 
-/* .text-block {
+.text-block {
   position: absolute;
   bottom: 130px;
   right: 500px;
@@ -423,7 +368,7 @@ a:hover {
   padding-right: 20px;
   top: 150px;
   left: 500px;
-} */
+}
 
 .img-full-width {
   width: 100%;
